@@ -7,7 +7,7 @@ body{
     background-color : #ddd7d7;
 }
 #container{
-    width: auto;
+    width: 100%;
     display: grid;
 }
 #header-container{
@@ -149,25 +149,11 @@ a{
     margin-left: 25px;
 }
 #infor{
-    display: flex;
-    gap: 3rem;
     align-items: center;
     background-color: #fff;
     padding-bottom: 80px;
 }
-#infor #info #cost{
-    display: flex;
-    gap: 1rem;
-    text-align: right;
-    align-items: center;
-}
-#infor #info {
-    margin: 30px;
-    text-align: right;
-}
-#infor #info h1,h2{
-    color: rgb(33, 109, 112);
-}
+
 #product-container{
     display: grid;
 }
@@ -214,6 +200,7 @@ a{
 
 #infor #dia{
     display: flex;
+    gap: 3rem;
     justify-content: space-between;
     height: 400px;
     width: 100%;
