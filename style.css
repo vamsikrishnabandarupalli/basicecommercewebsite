@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 body{
-    width: 100%;
-    background-color: rgb(17, 17, 75);
+    background-color : #ddd7d7;
 }
 #container{
     width: auto;
+    display: grid;
 }
 #header-container{
     width: 100%;
@@ -152,7 +152,6 @@ a{
     display: flex;
     gap: 3rem;
     align-items: center;
-    margin-bottom: 180px;
     background-color: #fff;
     padding-bottom: 80px;
 }
@@ -169,6 +168,9 @@ a{
 #infor #info h1,h2{
     color: rgb(33, 109, 112);
 }
+#product-container{
+    display: grid;
+}
 #product-container #cust{
     display: flex;
     gap: 4rem;
@@ -181,11 +183,13 @@ a{
 }
 #product-container #cards-container{
     padding: 40px;
+    position: relative;
+    display: grid;
 }
 #product-container #cards-container #card-detail{
     padding: 20px;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 30px 20px;
     grid-template-columns: repeat(4, 1fr);
 }
 #product-container #cards-container img{
@@ -259,50 +263,19 @@ a{
     width: 200px;
     height: 200px;
 }
-@media (max-width:1095px){
+@media (max-width:1030px){
     #container{
-        width: 200%;
-        height: 400%;
+        width: 100%;
     }
-}
-@media (max-width:840px){
-    #container{
-        width: 200%;
-        height: 400%;
+    #product-container #cards-container{
+        padding: 40px;
+        position: relative;
+        display: grid;
     }
-    #title-container #produ{
-        margin-right: 20px;
-    }
-}
-@media (max-width:720px){
-    #container{
-        width: 200%;
-    }
-    #contaier #buttomcolor{
-        width: 300%;
-    }
-}
-@media (max-width:445px){
-    #container{
-        width: 300%;
-    }
-    #contaier #buttomcolor{
-        width: 400%;
-    }
-}
-@media (max-width:560px){
-    #container{
-        width: 400%;
-    }
-    #contaier #buttomcolor{
-        width: 400%;
-    }
-}
-@media (max-width:370px){
-    #container{
-        width: 400%;
-    }
-    #contaier #buttomcolor{
-        width: 400%;
+    #product-container #cards-container #card-detail{
+        padding: 20px;
+        display: grid;
+        grid-gap: 30px 20px;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
